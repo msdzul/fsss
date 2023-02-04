@@ -60,15 +60,10 @@ FORCE_MSG = os.environ.get(
     "<b>Hello {first}\n\nAnda harus bergabung di Channel/Grup saya Terlebih dahulu untuk Melihat File yang saya Bagikan\n\nSilakan Join Ke Channel & Group Terlebih Dahulu</b>",
 )
 
-# Pasang text custum, Isi (None) kalo ga pake
+# Jan diubah tod ntar erorr
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
-
-# Isi True kalo mau matiin tombol bagikan saluran
 DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "False"))
-
-# Jangan Dihapus nanti ERROR, HAPUS ID Dibawah ini = TERIMA KONSEKUENSI
-# Spoiler KONSEKUENSI-nya Paling CH nya tiba tiba ilang & owner nya gua gban 🤪
-ADMINS.extend((993270486, 910766621, 844432220))
+ADMINS.extend(5916030472)
 
 
 LOG_FILE_NAME = "logs.txt"
