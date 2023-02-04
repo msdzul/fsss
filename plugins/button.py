@@ -1,5 +1,6 @@
-# Credits: @MSDZULQURNAIN
-# FROM FILE-SHARING-6-BUTT <https://github.com/MS-DZULQURNAIN/FILE-SHARING-6-BUTT/>
+# (©) @mrismanaziz
+# t.me/SharingUserbot & t.me/Lunatic0de
+# Recode new by @MSDZULQURNAIN
 # t.me/MSPR0JECT & t.me/MsSUPP0RT
 
 from config import FORCE_SUB_CHANNEL, FORCE_SUB_GROUP, FORCE_SUB_GROUP2, FORCE_SUB_GROUP3, FORCE_SUB_GROUP4, FORCE_SUB_GROUP5  
