@@ -1,4 +1,4 @@
-"""Get id of the replied user
+"""Get id of the replied userp
 Syntax: /id"""
 
 from pyrogram import filters
