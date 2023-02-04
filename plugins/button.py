@@ -1,5 +1,5 @@
 # (©) @mrismanaziz
-# t.me/SharingUserbot & t.me/Lunatic0dep
+# t.me/SharingUserbot & t.me/Lunatic0de
 # Recode new by @MSDZULQURNAIN
 # t.me/MSPR0JECT & t.me/MsSUPP0RT
 
