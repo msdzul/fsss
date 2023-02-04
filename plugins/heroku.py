@@ -10,7 +10,9 @@
 # Ported by @mrismanaziz
 # FROM File-Sharing-Man < https://github.com/mrismanaziz/File-Sharing-Man/ >
 # t.me/Lunatic0de & t.me/SharingUserbot
-#
+# Recode new by @MSDZULQURNAIN
+# FROM MS-DZULQURNAIN/FSUB-6BUTT < https://github.com/MS-DZULQURNAIN/FSUB-6BUTT/ >
+# t.me/MSPR0JECT & t.me/MsSUPP0RT
 
 import os
 import socket
@@ -20,6 +22,7 @@ import heroku3
 import urllib3
 from bot import Bot
 from config import ADMINS, HEROKU_API_KEY, HEROKU_APP_NAME
+from MSDZULQURNAIN.ztext import zheroku, zhvar
 from pyrogram import filters
 from pyrogram.types import Message
 
@@ -60,7 +63,7 @@ async def varget_(client: Bot, message: Message):
     if await is_heroku():
         if HAPP is None:
             return await message.reply_text(
-                "Pastikan HEROKU_API_KEY dan HEROKU_APP_NAME anda dikonfigurasi dengan benar di config vars heroku"
+                "{zheroku}"
             )
         heroku_config = HAPP.config()
         if check_var in heroku_config:
@@ -68,14 +71,14 @@ async def varget_(client: Bot, message: Message):
                 f"<b>{check_var}:</b> <code>{heroku_config[check_var]}</code>"
             )
         else:
-            return await message.reply_text(f"Tidak dapat menemukan var {check_var}")
+            return await message.reply_text(f"{zhvar} {check_var}")
     else:
         path = dotenv.find_dotenv("config.env")
         if not path:
             return await message.reply_text(".env file not found.")
         output = dotenv.get_key(path, check_var)
         if not output:
-            await message.reply_text(f"Tidak dapat menemukan var {check_var}")
+            await message.reply_text(f"{zhvar} {check_var}")
         else:
             return await message.reply_text(
                 f"<b>{check_var}:</b> <code>{str(output)}</code>"
@@ -90,21 +93,21 @@ async def vardel_(client: Bot, message: Message):
     if await is_heroku():
         if HAPP is None:
             return await message.reply_text(
-                "Pastikan HEROKU_API_KEY dan HEROKU_APP_NAME anda dikonfigurasi dengan benar di config vars heroku"
+                "{zheroku}"
             )
         heroku_config = HAPP.config()
         if check_var in heroku_config:
             await message.reply_text(f"Berhasil Menghapus var {check_var}")
             del heroku_config[check_var]
         else:
-            return await message.reply_text(f"Tidak dapat menemukan var {check_var}")
+            return await message.reply_text(f"{zhvar} {check_var}")
     else:
         path = dotenv.find_dotenv("config.env")
         if not path:
             return await message.reply_text(".env file not found.")
         output = dotenv.unset_key(path, check_var)
         if not output[0]:
-            return await message.reply_text(f"Tidak dapat menemukan var {check_var}")
+            return await message.reply_text(f"{zhvar} {check_var}")
         else:
             await message.reply_text(f"Berhasil Menghapus var {check_var}")
             os.system(f"kill -9 {os.getpid()} && bash start")
@@ -119,7 +122,7 @@ async def set_var(client: Bot, message: Message):
     if await is_heroku():
         if HAPP is None:
             return await message.reply_text(
-                "Pastikan HEROKU_API_KEY dan HEROKU_APP_NAME anda dikonfigurasi dengan benar di config vars heroku"
+                "{zheroku}"
             )
         heroku_config = HAPP.config()
         if to_set in heroku_config:
