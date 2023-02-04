@@ -1,7 +1,7 @@
 
 # (©)Codexbotz
-# Recode by @mrismanaziz
-# t.me/SharingUserbot & t.me/Lunatic0de
+# Recode by @MSDZULQURNAIN
+# t.me/MSPR0JECT & t.me/MsSUPP0RT
 
 import asyncio
 from datetime import datetime
@@ -89,11 +89,11 @@ async def start_command(client: Bot, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except BaseException:
                 return
-        temp_msg = await message.reply("<code>Tunggu Sebentar...</code>")
+        temp_msg = await message.reply("<code>Sabar yaa...</code>")
         try:
             messages = await get_messages(client, ids)
         except BaseException:
-            await message.reply_text("<b>Telah Terjadi Error </b>🥺")
+            await message.reply_text("<b>Ada yg salah...!</b>🗿")
             return
         await temp_msg.delete()
 
@@ -169,16 +169,16 @@ async def not_joined(client: Bot, message: Message):
     )
 
 
-@Bot.on_message(filters.command(["users", "stats"]) & filters.user(ADMINS))
+@Bot.on_message(filters.command(["pengguna", "stats"]) & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
     msg = await client.send_message(
-        chat_id=message.chat.id, text="<code>Processing ...</code>"
+        chat_id=message.chat.id, text="<code>Utiwi masehh...</code>"
     )
     users = await full_userbase()
-    await msg.edit(f"{len(users)} <b>Pengguna menggunakan bot ini</b>")
+    await msg.edit(f"{len(users)} <b>Jumlah Pengguna</b>")
 
 
-@Bot.on_message(filters.command("broadcast") & filters.user(ADMINS))
+@Bot.on_message(filters.command("siarkan") & filters.user(ADMINS))
 async def send_text(client: Bot, message: Message):
     if message.reply_to_message:
         query = await query_msg()
@@ -190,7 +190,7 @@ async def send_text(client: Bot, message: Message):
         unsuccessful = 0
 
         pls_wait = await message.reply(
-            "<code>Broadcasting Message Tunggu Sebentar...</code>"
+            "<code>Sedang menyiarkan...Sabar ya</code>"
         )
         for row in query:
             chat_id = int(row[0])
@@ -209,16 +209,16 @@ async def send_text(client: Bot, message: Message):
                 except BaseException:
                     unsuccessful += 1
                 total += 1
-        status = f"""<b><u>Berhasil Broadcast</u>
-Jumlah Pengguna: <code>{total}</code>
-Berhasil: <code>{successful}</code>
-Gagal: <code>{unsuccessful}</code>
-Pengguna diblokir: <code>{blocked}</code>
-Akun Terhapus: <code>{deleted}</code></b>"""
+        status = f"""<b><u>Berhasil Siarkan</u>
+Total Pengguna📋: <code>{total}</code>
+Berhasil mengirim surat cinta💝: <code>{successful}</code>
+Gagal ky percintaan mu🗿: <code>{unsuccessful}</code>
+Pengguna diblokir🚫: <code>{blocked}</code>
+Akun dihapus karena nakal😾: <code>{deleted}</code></b>\n🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍"""
         return await pls_wait.edit(status)
     else:
         msg = await message.reply(
-            "<code>Gunakan Perintah ini Harus Sambil Reply ke pesan telegram yang ingin di Broadcast.</code>"
+            "<code>kalo broadcast sambil Reply pesan☺</code>"
         )
         await asyncio.sleep(8)
         await msg.delete()
@@ -230,22 +230,22 @@ async def ping_pong(client, m: Message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    m_reply = await m.reply_text("Pinging...")
+    m_reply = await m.reply_text("Sedang cek...")
     delta_ping = time() - start
     await m_reply.edit_text(
-        "<b>PONG!!</b>🏓 \n"
-        f"<b>• Pinger -</b> <code>{delta_ping * 1000:.3f}ms</code>\n"
-        f"<b>• Uptime -</b> <code>{uptime}</code>\n"
+        "🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍\n"
+        f"<b>• Ping -</b> <code>{delta_ping * 1000:.3f}ms</code>\n"
+        f"<b>• Aktif -</b> <code>{uptime}</code>\n"
     )
 
 
-@Bot.on_message(filters.command("uptime"))
+@Bot.on_message(filters.command("aktif"))
 async def get_uptime(client, m: Message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m.reply_text(
-        "🤖 <b>Bot Status:</b>\n"
-        f"• <b>Uptime:</b> <code>{uptime}</code>\n"
-        f"• <b>Start Time:</b> <code>{START_TIME_ISO}</code>"
+        "👤 <b>BOT AKTIF:</b>\n"
+        f"• <b>Aktif :</b> <code>{uptime}</code>\n"
+        f"• <b>Mulai :</b> <code>{START_TIME_ISO}</code>"
     )
