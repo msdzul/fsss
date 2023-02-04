@@ -12,3 +12,9 @@ zfsub = "<b>Hallo {first}\n\nKamu harus join channel saya sebelum memakai saya\n
 #HEROKU
 zheroku = "Pastikan HEROKU_API_KEY dan HEROKU_APP_NAME anda benar di config vars heroku"
 zhvar = "Tidak dapat menemukan var"
+
+#FORWARD
+zfrwd = "<b>Silahkan Forward Pesan dari Channel DataBase</b>\n\n\n<b>atau Kirim Link Postingan dari Channel Database</b>"
+zfrwdp = "<b>Silahkan Forward Pesan PERTAMA dari Channel DataBase</b>\n\n\n<b>atau Kirim Link Postingan PERTAMA dari Channel Database</b>"
+zfrwdt = "<b>Silahkan Forward Pesan TERAKHIR dari Channel DataBase</b>\n\n\n<b>atau Kirim Link Postingan TERAKHIR dari Channel Database</b>"
+zfrwds = "❌ <b>SALAH</b>\n\n<b>BANDEL BANGET IHH😭</b>"
