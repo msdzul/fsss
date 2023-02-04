@@ -1,0 +1,102 @@
+{
+  "name": "FILE SHARING 6 BUTT",
+  "description": "MS DZULQURNAIN",
+  "keywords": [
+    "bot"
+     ],
+  "repository": "https://github.com/MS-DZULQURNAIN/FILE-SHARING-6-BUTT",
+  "logo": "https://ibb.co/GHpsHN4",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Bot Token dari t.me/BotFather",
+      "value": ""
+    },
+    "OWNER": {
+      "description": "Username OWNER jan pake @",
+      "value": "MSDZULQURNAIN"
+    },
+    "OWNER_ID": {
+      "description": "ID OWNER",
+      "value": "5916030472"
+    },
+    "ADMINS": {
+      "description": "USER ID yg bisa buat link",
+      "value": "1337085565"
+    },
+    "APP_ID": {
+      "description": "APP ID dari my.telegram.org",
+      "value": "16452568"
+    },
+    "API_HASH": {
+      "description": "API HASH dari my.telegram.org",
+      "value": "f936697c5c9e5bffd433babef7a4e4c9"
+    },
+    "HEROKU_API_KEY": {
+     "description": "Heroku Api Key dari skin heroku mu",
+     "value": ""
+    },
+    "HEROKU_APP_NAME": {
+     "description": "Nama sesuai yg paling atas",
+     "value": ""
+    },
+    "CHANNEL_ID": {
+      "description": "ID CHANNEL DataBase",
+      "value": "-1001749379103"
+    },
+    "FORCE_SUB_CHANNEL": {
+      "description": "ID Channel/Grub ForceSub, kalo ga pake ForceSub isi 0",
+      "value": "0"
+    },
+    "FORCE_SUB_GROUP": {
+      "description": "ID Grub ForceSub, kalo ga pake ForceSub isi 0",
+      "value": "0"
+    },
+    "FORCE_SUB_GROUP2": {
+      "description": "ID Channel/Grub ForceSub, kalo ga pake ForceSub isi 0",
+      "value": "0"
+    },
+    "FORCE_SUB_GROUP3": {
+      "description": "ID Channel/Grub ForceSub, kalo ga pake ForceSub isi 0",
+      "value": "0"
+    },
+    "FORCE_SUB_GROUP4": {
+      "description": "ID Channel/Grub ForceSub, kalo ga pake ForceSub isi 0",
+      "value": "0"
+    },
+    "FORCE_SUB_GROUP5": {
+      "description": "ID Channel/Grub ForceSub, kalo ga pake ForceSub isi 0",
+      "value": "0"
+    },
+    "START_MESSAGE": {
+      "description": "Pesan /start bisa pake format HTML",
+      "value": "<b>Hallo {first}</b>\n\n<b>Saya adalah bot file sharing saya bisa mengirim kamu file melalui link yg telah dibuat\n\nSebelum menggunakan saya kamu wajib join channel saya.</b>"
+    },
+    "FORCE_SUB_MESSAGE": {
+      "description": "Pesan ForceSub bisa pake format HTML",
+      "value": "<b>Hallo {first}\n\nKamu harus join channel saya sebelum memakai saya\n\nJoin channel dibawah😉</b>"
+    },
+    "PROTECT_CONTENT": {
+      "description": "Isi True biar bot gabisa di ss & diteruskan, klo ga isi aja False",
+      "value": "False"
+   }
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
