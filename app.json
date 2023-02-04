@@ -1,84 +1,84 @@
 {
   "name": "F-SUBS 6 BUTTON",
-  "description": "BOT Multi Force Subs File Sharing Bot berguna untuk menyimpan file dan dapat diakses melalui link khusus",
+  "description": "BOT BY MS DZULQURNAIN",
   "keywords": [
     "telegram",
     "file",
     "sharing"
   ],
-  "repository": "https://github.com/ramadhani892/3-BUTTONS",
-  "logo": "https://telegra.ph/file/9e1ccb4c62cf8375545d0.jpg",
+  "repository": "https://github.com/MS-DZULQURNAIN/FSUB-6BUTT",
+  "logo": "",
   "env": {
     "TG_BOT_TOKEN": {
-      "description": "Masukan Bot token, Dapatkan dari t.me/BotFather",
+      "description": "Bot token dari t.me/BotFather",
       "value": ""
     },
     "OWNER": {
-      "description": "Masukan Username Telegram untuk Owner BOT [ Jangan Pake @ ]",
-      "value": "thisrama"
+      "description": "Username Owner Bot, gosah pake @",
+      "value": "MSDZULQURNAIN"
     },
     "OWNER_ID": {
-      "description": "Masukan User ID Telegram untuk Owner BOT",
-      "value": "910766621"
+      "description": "ID Owner BOT",
+      "value": "5916030472"
     },
     "ADMINS": {
-      "description": "Masukan User ID untuk mendapatkan hak Admin BOT [Hanya dapat membuat link]",
+      "description": "ID Admin yg bisa akses bot",
       "value": "0"
     },
     "APP_ID": {
-      "description": "Dapatkan APP ID di web my.telegram.org",
+      "description": "APP ID dari my.telegram.org",
       "value": ""
     },
     "API_HASH": {
-      "description": "Dapatkan API HASH di web my.telegram.org",
+      "description": "API HASH dari my.telegram.org",
       "value": ""
     },
     "HEROKU_API_KEY": {
-     "description": "Dapatkan apikey heroku pada account settings dashboard anda",
+     "description": "Apikey Heroku di account setting",
      "value": ""
     },
     "HEROKU_APP_NAME": {
-     "description": "isi heroku app name sesuai dengan nama paling atas",
+     "description": "Heroku App Name, paling atas",
      "value": ""
     },
     "CHANNEL_ID": {
-      "description": "Masukan ID Channel Untuk [Channel Database]",
+      "description": "ID Channel Database",
       "value": "-100"
     },
     "FORCE_SUB_CHANNEL": {
-      "description": "Masukan ID dari Channel Atau Group Untuk Wajib Subscribenya, Bila tidak ingin dipakai Fsubnya, isi dengan 0",
+      "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
       "value": "0"
     },
     "FORCE_SUB_GROUP": {
-      "description": "Masukan ID dari Group Untuk Wajib Subscribenya, Bila tidak ingin dipakai Fsubnya, isi dengan 0",
+      "description": "ID Group FSUB, Kalo ga pake isi 0",
       "value": "0"
     },
     "FORCE_SUB_GROUP2": {
-      "description": "Masukan ID Group / Channel Untuk Wajib Subscribe, Bila Ga kepake isi 0",
+      "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
       "value": "0"
     },
     "FORCE_SUB_GROUP3": {
-      "description": "Masukan ID Group / Channel Untuk Wajib Subscribe, Bila Ga kepake isi 0",
+      "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
       "value": "0"
     },
     "FORCE_SUB_GROUP4": {
-      "description": "Masukan ID Group / Channel Untuk Wajib Subscribe, Bila Ga kepake isi 0",
+      "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
       "value": "0"
     },
     "FORCE_SUB_GROUP5": {
-      "description": "Masukan ID Group / Channel Untuk Wajib Subscribe, Bila Ga kepake isi 0",
+      "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
       "value": "0"
     },
     "START_MESSAGE": {
-      "description": "Pesan /start memulai awalan ke bot, Gunakan format parsemode HTML",
-      "value": "<b>Hello {first}\n\nSaya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>"
+      "description": "Pesan /start bisa pake format HTML",
+      "value": "<b>Hallo {first}</b>\n\n<b>Saya adalah bot file sharing saya bisa mengirim kamu file melalui link yg telah dibuat\n\nSebelum menggunakan saya kamu wajib join channel saya.</b>"
     },
     "FORCE_SUB_MESSAGE": {
-      "description": "Pesan Paksa Subscribe bot, Gunakan Format parsemode HTML",
-      "value": "<b>ʜᴇʟʟᴏ {first}\n\nᴍᴀᴀꜰ ᴀɴᴅᴀ ʙᴇʟᴜᴍ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ / ɢʀᴜᴘ ᴋᴀᴍɪ !! ꜱɪʜʟᴀᴋᴀɴ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ᴅᴀɴ ɢʀᴜᴘ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ\nᴜɴᴛᴜᴋ ᴅᴀᴘᴀᴛ ᴍᴇʟɪʜᴀᴛ ᴠɪᴅᴇᴏ ᴅᴀʀɪ ʙᴏᴛ ɪɴɪ !!\n\nᴊᴏɪɴ ↓</b>"
+      "description": "Pesan FSUB bisa pake format HTML",
+      "value": "<b>Hallo {first}\n\nKamu harus join channel saya sebelum memakai saya\n\nJoin channel dibawah😉</b>"
     },
     "PROTECT_CONTENT": {
-      "description": "Isi True Jika Ingin Untuk Mencegah File Di Teruskan Oleh Orang Lain or False Untuk mematikan ",
+      "description": "Isi True biar bot gabisa di ss & di teruskan, kalo ga biarin aja False",
       "value": "False"
    }
   },
