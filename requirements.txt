@@ -1,4 +1,4 @@
-feedparserq
+feedparser
 gitpython
 heroku3
 psycopg2-binary
