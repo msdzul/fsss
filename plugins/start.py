@@ -1,6 +1,7 @@
-
 # (©)Codexbotz
-# Recode by @MSDZULQURNAIN
+# Recode by @mrismanaziz
+jsjs
+# Recode new by @MSDZULQURNAIN
 # t.me/MSPR0JECT & t.me/MsSUPP0RT
 
 import asyncio
@@ -169,7 +170,7 @@ async def not_joined(client: Bot, message: Message):
     )
 
 
-@Bot.on_message(filters.command(["pengguna", "stats"]) & filters.user(ADMINS))
+@Bot.on_message(filters.command(["users", "stats"]) & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
     msg = await client.send_message(
         chat_id=message.chat.id, text="<code>Utiwi masehh...</code>"
@@ -178,7 +179,7 @@ async def get_users(client: Bot, message: Message):
     await msg.edit(f"{len(users)} <b>Jumlah Pengguna</b>")
 
 
-@Bot.on_message(filters.command("siarkan") & filters.user(ADMINS))
+@Bot.on_message(filters.command("broadcast") & filters.user(ADMINS))
 async def send_text(client: Bot, message: Message):
     if message.reply_to_message:
         query = await query_msg()
@@ -190,7 +191,7 @@ async def send_text(client: Bot, message: Message):
         unsuccessful = 0
 
         pls_wait = await message.reply(
-            "<code>Sedang menyiarkan...Sabar ya</code>"
+            "<code>Sedang broadcast...Sabar ya</code>"
         )
         for row in query:
             chat_id = int(row[0])
@@ -209,12 +210,12 @@ async def send_text(client: Bot, message: Message):
                 except BaseException:
                     unsuccessful += 1
                 total += 1
-        status = f"""<b><u>Berhasil Siarkan</u>
+        status = f"""<b><u>Berhasil Broadcast</u>
 Total Pengguna📋: <code>{total}</code>
 Berhasil mengirim surat cinta💝: <code>{successful}</code>
 Gagal ky percintaan mu🗿: <code>{unsuccessful}</code>
 Pengguna diblokir🚫: <code>{blocked}</code>
-Akun dihapus karena nakal😾: <code>{deleted}</code></b>\n🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍"""
+Akun dihapus karena nakal😾: <code>{deleted}</code></b>\n\n🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍"""
         return await pls_wait.edit(status)
     else:
         msg = await message.reply(
@@ -235,11 +236,11 @@ async def ping_pong(client, m: Message):
     await m_reply.edit_text(
         "🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍\n"
         f"<b>• Ping -</b> <code>{delta_ping * 1000:.3f}ms</code>\n"
-        f"<b>• Aktif -</b> <code>{uptime}</code>\n"
+        f"<b>• Uptime -</b> <code>{uptime}</code>\n"
     )
 
 
-@Bot.on_message(filters.command("aktif"))
+@Bot.on_message(filters.command("uptime"))
 async def get_uptime(client, m: Message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
