@@ -1,8 +1,17 @@
+# (©)Codexbotz
+# Recode by @mrismanaziz
+# t.me/SharingUserbot & t.me/Lunatic0de
+# Recode new by @MSDZULQURNAIN
+# t.me/MSPR0JECT & t.me/MsSUPP0RT
+
+
+
 import logging
 import os
 from distutils.util import strtobool
 from dotenv import load_dotenv
 from logging.handlers import RotatingFileHandler
+from MSDZULQURNAIN.ztext import zstart, zfsub
 
 load_dotenv("config.env")
 
@@ -47,7 +56,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 # Pesan /start
 START_MSG = os.environ.get(
     "START_MESSAGE",
-    "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
+    "{zstart}",
 )
 try:
     ADMINS = [int(x) for x in (os.environ.get("ADMINS", "" ).split())]
@@ -57,7 +66,7 @@ except ValueError:
 # Pesan FSUB
 FORCE_MSG = os.environ.get(
     "FORCE_SUB_MESSAGE",
-    "<b>Hello {first}\n\nAnda harus bergabung di Channel/Grup saya Terlebih dahulu untuk Melihat File yang saya Bagikan\n\nSilakan Join Ke Channel & Group Terlebih Dahulu</b>",
+    "{zfsub}",
 )
 
 # Jan diubah tod ntar erorr
