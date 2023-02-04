@@ -1,7 +1,6 @@
-# Credits: @mrismanaziz
-# FROM File-Sharing-Man <https://github.com/mrismanaziz/File-Sharing-Man/>
-# t.me/userbotch & t.me/ramsupportt
-# Add Code FROM 3-BUTTONS <https://github.com/ramadhani892/3-BUTTONS
+# Credits: @MSDZULQURNAIN
+# FROM FILE-SHARING-6-BUTT <https://github.com/MS-DZULQURNAIN/FILE-SHARING-6-BUTT/>
+# t.me/MSPR0JECT & t.me/MsSUPP0RT
 
 from config import FORCE_SUB_CHANNEL, FORCE_SUB_GROUP, FORCE_SUB_GROUP2, FORCE_SUB_GROUP3, FORCE_SUB_GROUP4, FORCE_SUB_GROUP5  
 
@@ -12,103 +11,121 @@ def start_button(client):
     if not FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP and not FORCE_SUB_GROUP2 and not FORCE_SUB_GROUP3 and not FORCE_SUB_GROUP4 and not FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close"),
+                InlineKeyboardButton(text="Tentang saya👤", callback_data="about"),
+                InlineKeyboardButton(text="Tutup💝", callback_data="close"),
             ],
         ]
         return buttons
     if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP and FORCE_SUB_GROUP2 and not FORCE_SUB_GROUP3 and not FORCE_SUB_GROUP4 and not FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink2),
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink3),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink2),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink3),
             ],
             [
-                InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close"),
+                InlineKeyboardButton(text="Tentang saya👤", callback_data="about"),
+                InlineKeyboardButton(text="Tutup💝", callback_data="close"),
             ],
         ]
         return buttons
     if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP and not FORCE_SUB_GROUP2 and not FORCE_SUB_GROUP3 and not FORCE_SUB_GROUP4 and not FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink),
             ],
             [
-                InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close"),
+                InlineKeyboardButton(text="Tentang saya👤", callback_data="about"),
+                InlineKeyboardButton(text="Tutup💝", callback_data="close"),
             ],
         ]
         return buttons
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP and not FORCE_SUB_GROUP2 and not FORCE_SUB_GROUP3 and not FORCE_SUB_GROUP4 and not FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink),
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink2),
+                InlineKeyboardButton(text="Tentang saya👤", callback_data="about"),
             ],
-            [InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close")],
+            [
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink2),
+            ],
+            [InlineKeyboardButton(text="Tutup💝", callback_data="close")],
         ]
         return buttons
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP and FORCE_SUB_GROUP2 and not FORCE_SUB_GROUP3 and not FORCE_SUB_GROUP4 and not FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink),
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink2),
+                InlineKeyboardButton(text="Tentang saya👤", callback_data="about"),
             ],
             [
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink3),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close"),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink3),
+            ],
+            [
+                InlineKeyboardButton(text="Tutup💝", callback_data="close"),
             ],
         ]
         return buttons
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP and FORCE_SUB_GROUP2 and FORCE_SUB_GROUP3 and not FORCE_SUB_GROUP4 and not FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink),
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink2),
+                InlineKeyboardButton(text="Tentang saya👤", callback_data="about"),
             ],
             [
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink3),
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink4),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close"),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink3),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink4),
+            ],
+            [
+                InlineKeyboardButton(text="Tutup💝", callback_data="close"),
             ],
         ]
         return buttons
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP and FORCE_SUB_GROUP2 and FORCE_SUB_GROUP3 and FORCE_SUB_GROUP4 and not FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink),
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink2),
+                InlineKeyboardButton(text="Tentang saya👤", callback_data="about"),
             ],
             [
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink3),
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink4),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink5),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink3),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink4),
             ],
             [
-                InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close"),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink5),
+            ],
+            [
+                InlineKeyboardButton(text="Tutup💝", callback_data="close"),
             ],
         ]
         return buttons
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP and FORCE_SUB_GROUP2 and FORCE_SUB_GROUP3 and FORCE_SUB_GROUP4 and FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink),
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink2),
+                InlineKeyboardButton(text="Tentang saya👤", callback_data="about"),
             ],
             [
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink3),
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink4),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink5),
-                InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋", url=client.invitelink6),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink3),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink4),
             ],
             [
-                InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close"),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink5),
+                InlineKeyboardButton(text="🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink6),
+            ],
+            [
+                InlineKeyboardButton(text="Tutup💝", callback_data="close"),
             ],
         ]
         return buttons
@@ -117,14 +134,14 @@ def fsub_button(client, message):
     if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP and not FORCE_SUB_GROUP2 and not FORCE_SUB_GROUP3 and not FORCE_SUB_GROUP4 and not FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink2),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink2),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ᴄᴏʙᴀ ʟᴀɢɪ",
+                        text="Coba lagi",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -135,14 +152,14 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP and not FORCE_SUB_GROUP2 and not FORCE_SUB_GROUP3 and not FORCE_SUB_GROUP4 and not FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ᴄᴏʙᴀ ʟᴀɢɪ",
+                        text="Coba lagi",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -153,15 +170,15 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP and not FORCE_SUB_GROUP2 and not FORCE_SUB_GROUP3 and not FORCE_SUB_GROUP4 and not FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink),
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink2),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink2),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ᴄᴏʙᴀ ʟᴀɢɪ",
+                        text="Coba lagi",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -172,18 +189,18 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP and FORCE_SUB_GROUP2 and not FORCE_SUB_GROUP3 and not FORCE_SUB_GROUP4 and not FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink),
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink2),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink3),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink3),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ᴄᴏʙᴀ ʟᴀɢɪ",
+                        text="Coba lagi",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -194,19 +211,19 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP and FORCE_SUB_GROUP2 and FORCE_SUB_GROUP3 and not FORCE_SUB_GROUP4 and not FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink),
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink2),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink3),
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink4),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink3),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink4),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ᴄᴏʙᴀ ʟᴀɢɪ",
+                        text="Coba lagi",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -217,22 +234,22 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP and FORCE_SUB_GROUP2 and FORCE_SUB_GROUP3 and FORCE_SUB_GROUP4 and not FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink),
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink2),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink3),
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink4),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink3),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink4),
             ],
             [
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink5),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink5),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ᴄᴏʙᴀ ʟᴀɢɪ",
+                        text="Coba lagi",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -243,23 +260,23 @@ def fsub_button(client, message):
     if FORCE_SUB_CHANNEL and FORCE_SUB_GROUP and FORCE_SUB_GROUP2 and FORCE_SUB_GROUP3 and FORCE_SUB_GROUP4 and FORCE_SUB_GROUP5:
         buttons = [
             [
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink),
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink2),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink3),
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink4),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink3),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink4),
             ],
             [
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink5),
-                InlineKeyboardButton(text="𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=client.invitelink6),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink5),
+                InlineKeyboardButton(text="🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=client.invitelink6),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ᴄᴏʙᴀ ʟᴀɢɪ",
+                        text="Coba lagi",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
