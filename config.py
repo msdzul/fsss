@@ -9,32 +9,32 @@ load_dotenv("config.env")
 # Bot token dari @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
-# API ID Anda dari my.telegram.org
+# API ID dari my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", ""))
 
-# API Hash Anda dari my.telegram.org
+# API Hash dari my.telegram.org
 API_HASH = os.environ.get("API_HASH", "")
 
 # ID Channel Database
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "thisrama")
+OWNER = os.environ.get("OWNER", "MSDZULQURNAIN")
 
 # Protect Content
 PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
 
-# Heroku Credentials for updater.
+# Heroku Credentialisasi untuk update.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 
-# Custom Repo for updater.
+# Custom Repo untuk update.
 UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "main")
 
-# Database
+# Database SQL
 DB_URI = os.environ.get("DATABASE_URL", "")
 
-# ID dari Channel Atau Group Untuk Wajib Subscribenya
+# ID Channel FSUB-BUTT kalo ga pake isi 0
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0"))
 FORCE_SUB_GROUP2 = int(os.environ.get("FORCE_SUB_GROUP2", "0"))
@@ -44,7 +44,7 @@ FORCE_SUB_GROUP5 = int(os.environ.get("FORCE_SUB_GROUP5", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-# Pesan Awalan /start
+# Pesan /start
 START_MSG = os.environ.get(
     "START_MESSAGE",
     "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
@@ -54,16 +54,16 @@ try:
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
-# Pesan Saat Memaksa Subscribe
+# Pesan FSUB
 FORCE_MSG = os.environ.get(
     "FORCE_SUB_MESSAGE",
     "<b>Hello {first}\n\nAnda harus bergabung di Channel/Grup saya Terlebih dahulu untuk Melihat File yang saya Bagikan\n\nSilakan Join Ke Channel & Group Terlebih Dahulu</b>",
 )
 
-# Atur Teks Kustom Anda di sini, Simpan (None) untuk Menonaktifkan Teks Kustom
+# Pasang text custum, Isi (None) kalo ga pake
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
-# Setel True jika Anda ingin Menonaktifkan tombol Bagikan Kiriman Saluran Anda
+# Isi True kalo mau matiin tombol bagikan saluran
 DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "False"))
 
 # Jangan Dihapus nanti ERROR, HAPUS ID Dibawah ini = TERIMA KONSEKUENSI
