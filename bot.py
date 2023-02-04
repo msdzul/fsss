@@ -42,7 +42,7 @@ class Bot(Client):
         except Exception as a:
             self.LOGGER(__name__).warning(a)
             self.LOGGER(__name__).info(
-                "Bot Berhenti. Gabung Group https://t.me/GeezRam untuk Bantuan"
+                "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
             )
             sys.exit()
 
@@ -56,13 +56,13 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "Bot tidak dapat Mengambil link invite dari FORCE_SUB_CHANNEL!"
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI CHANNEL FORCE SUB!"
                 )
                 self.LOGGER(__name__).warning(
-                    f"Pastikan @{self.username} adalah admin di Channel Tersebut, Chat ID F-Subs Channel Saat Ini: {FORCE_SUB_CHANNEL}"
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI CHANNEL FORCE SUB JIKA SUDAH SILAKAN CEK KEMBALI😗: {FORCE_SUB_CHANNEL}"
                 )
                 self.LOGGER(__name__).info(
-                    "Bot Berhenti. Gabung Group https://t.me/GeezRam untuk Bantuan"
+                    "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
                 )
                 sys.exit()
 
@@ -76,13 +76,13 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "Bot tidak dapat Mengambil link invite dari FORCE_SUB_GROUP!"
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FORCE SUB GRUB!"
                 )
                 self.LOGGER(__name__).warning(
-                    f"Pastikan @{self.username} adalah admin di Group Tersebut, Chat ID F-Subs Group Saat Ini: {FORCE_SUB_GROUP}"
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FORCE SUB GRUB JIKA SUDAH SILAKAN CEK KEMBALI😗: {FORCE_SUB_GROUP}"
                 )
                 self.LOGGER(__name__).info(
-                    "Bot Berhenti. Gabung Group https://t.me/GeezRam untuk Bantuan"
+                    "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
                 )
                 sys.exit()
 
@@ -96,13 +96,13 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "Bot tidak dapat Mengambil link invite dari FORCE_SUB_GROUP2!"
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FORCE SUB GRUB2"
                 )
                 self.LOGGER(__name__).warning(
-                    f"Pastikan @{self.username} adalah admin di Channel Tersebut, Chat ID F-Subs Channel Saat Ini: {FORCE_SUB_GROUP2}"
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FORCE SUB GRUB2 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FORCE_SUB_GROUP2}"
                 )
                 self.LOGGER(__name__).info(
-                    "Bot Berhenti. Gabung Group https://t.me/GeezRam untuk Bantuan"
+                    "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
                 )
                 sys.exit()
 
@@ -116,13 +116,13 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "Bot tidak dapat Mengambil link invite dari FORCE_SUB_GROUP3!"
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FORCE SUB GRUB3"
                 )
                 self.LOGGER(__name__).warning(
-                    f"Pastikan @{self.username} adalah admin di Channel Tersebut, Chat ID F-Subs Channel Saat Ini: {FORCE_SUB_GROUP3}"
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FORCE SUB GRUB3 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FORCE_SUB_GROUP3}"
                 )
                 self.LOGGER(__name__).info(
-                    "Bot Berhenti. Gabung Group https://t.me/GeezRam untuk Bantuan"
+                    "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
                 )
                 sys.exit()
 
@@ -136,13 +136,13 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "Bot tidak dapat Mengambil link invite dari FORCE_SUB_GROUP4!"
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FORCE SUB GRUB4"
                 )
                 self.LOGGER(__name__).warning(
-                    f"Pastikan @{self.username} adalah admin di Channel Tersebut, Chat ID F-Subs Channel Saat Ini: {FORCE_SUB_GROUP4}"
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FORCE SUB GRUB4 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FORCE_SUB_GROUP4}"
                 )
                 self.LOGGER(__name__).info(
-                    "Bot Berhenti. Gabung Group https://t.me/GeezRam untuk Bantuan"
+                    "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
                 )
                 sys.exit()
 
@@ -156,13 +156,13 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "Bot tidak dapat Mengambil link invite dari FORCE_SUB_GROUP5!"
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FORCE SUB GRUB5"
                 )
                 self.LOGGER(__name__).warning(
-                    f"Pastikan @{self.username} adalah admin di Channel Tersebut, Chat ID F-Subs Channel Saat Ini: {FORCE_SUB_GROUP5}"
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FORCE SUB GRUB5 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FORCE_SUB_GROUP5}"
                 )
                 self.LOGGER(__name__).info(
-                    "Bot Berhenti. Gabung Group https://t.me/GeezRam untuk Bantuan"
+                    "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
                 )
                 sys.exit()
 
@@ -174,18 +174,18 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning(
-                f"Pastikan @{self.username} adalah admin di Channel DataBase anda, CHANNEL_ID Saat Ini: {CHANNEL_ID}"
+                f"JADIKAN @{self.username} SEBAGAI ADMIN DI CHANNEL DATABASE JIKA SUDAH SILAKAN CEK KEMBALI😗: {CHANNEL_ID}"
             )
             self.LOGGER(__name__).info(
-                "Bot Berhenti. Gabung Group https://t.me/GeezRam untuk Bantuan"
+                "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
             )
             sys.exit()
 
         self.set_parse_mode("html")
         self.LOGGER(__name__).info(
-            f"[🔥 BERHASIL DIAKTIFKAN! 🔥]\n\nBOT Dibuat oleh @{OWNER}\nJika @{OWNER} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/GeezRam"
+            f"[BOT TELAH AKTIF🔥🔥🔥..!]\n\nBOT DIBUAT OLEH @{OWNER}\nJIKA @{OWNER} BUTUH BANTUAN, SILAKAN TANYA DI GRUB https://t.meMsSUPP0RT"
         )
 
     async def stop(self, *args):
         await super().stop()
-        self.LOGGER(__name__).info("Bot stopped.")
+        self.LOGGER(__name__).info("BOT BERHENTI🚫")
