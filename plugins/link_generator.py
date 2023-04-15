@@ -18,7 +18,7 @@ async def batch(client: Client, message: Message):
     while True:
         try:
             first_message = await client.ask(
-                text="{zfrwdp}",
+                text=f"{zfrwdp}",
                 chat_id=message.from_user.id,
                 filters=(filters.forwarded | (filters.text & ~filters.forwarded)),
                 timeout=60,
@@ -29,7 +29,7 @@ async def batch(client: Client, message: Message):
         if f_msg_id:
             break
         await first_message.reply(
-            "{zfrwds}",
+            f"{zfrwds}",
             quote=True,
         )
         continue
@@ -37,7 +37,7 @@ async def batch(client: Client, message: Message):
     while True:
         try:
             second_message = await client.ask(
-                text="{zfrwdt}",
+                text=f"{zfrwdt}",
                 chat_id=message.from_user.id,
                 filters=(filters.forwarded | (filters.text & ~filters.forwarded)),
                 timeout=60,
@@ -48,7 +48,7 @@ async def batch(client: Client, message: Message):
         if s_msg_id:
             break
         await second_message.reply(
-            "{zfrwds}",
+            f"{zfrwds}",
             quote=True,
         )
         continue
@@ -77,7 +77,7 @@ async def genlink(client: Client, message: Message):
     while True:
         try:
             channel_message = await client.ask(
-                text="{zfrwd}",
+                text=f"{zfrwd}",
                 chat_id=message.from_user.id,
                 filters=(filters.forwarded | (filters.text & ~filters.forwarded)),
                 timeout=60,
@@ -88,7 +88,7 @@ async def genlink(client: Client, message: Message):
         if msg_id:
             break
         await channel_message.reply(
-            "{zfrwds}",
+            f"{zfrwds}",
             quote=True,
         )
         continue
