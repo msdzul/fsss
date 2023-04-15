@@ -63,7 +63,7 @@ async def varget_(client: Bot, message: Message):
     if await is_heroku():
         if HAPP is None:
             return await message.reply_text(
-                "{zheroku}"
+                f"{zheroku}"
             )
         heroku_config = HAPP.config()
         if check_var in heroku_config:
@@ -93,7 +93,7 @@ async def vardel_(client: Bot, message: Message):
     if await is_heroku():
         if HAPP is None:
             return await message.reply_text(
-                "{zheroku}"
+                f"{zheroku}"
             )
         heroku_config = HAPP.config()
         if check_var in heroku_config:
@@ -122,7 +122,7 @@ async def set_var(client: Bot, message: Message):
     if await is_heroku():
         if HAPP is None:
             return await message.reply_text(
-                "{zheroku}"
+                f"{zheroku}"
             )
         heroku_config = HAPP.config()
         if to_set in heroku_config:
