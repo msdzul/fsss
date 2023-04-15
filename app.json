@@ -7,35 +7,35 @@
     "sharing"
   ],
   "repository": "https://github.com/MS-DZULQURNAIN/FSUB-6BUTT",
-  "logo": "",
+  "logo": "https://telegra.ph/file/e86b561ca93dbc98ea2f1.jpg",
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Bot token dari t.me/BotFather",
-      "value": ""
+      "value": "6003389653:AAEiEtEdirMnbhAbdXXAjAjyQaZnl6bNrxw"
     },
     "OWNER": {
       "description": "Username Owner Bot, gosah pake @",
-      "value": "MSDZULQURNAIN"
+      "value": "MSDZULQRNN"
     },
     "OWNER_ID": {
       "description": "ID Owner BOT",
-      "value": "5916030472"
+      "value": "1337085565"
     },
     "ADMINS": {
       "description": "ID Admin yg bisa akses bot",
-      "value": "0"
+      "value": "1337085565"
     },
     "APP_ID": {
       "description": "APP ID dari my.telegram.org",
-      "value": ""
+      "value": "16452568"
     },
     "API_HASH": {
       "description": "API HASH dari my.telegram.org",
-      "value": ""
+      "value": "f936697c5c9e5bffd433babef7a4e4c9"
     },
     "HEROKU_API_KEY": {
      "description": "Apikey Heroku di account setting",
-     "value": ""
+     "value": "9d037c24-1089-4778-ad5a-4ce41269b6bc"
     },
     "HEROKU_APP_NAME": {
      "description": "Heroku App Name, paling atas",
@@ -43,15 +43,15 @@
     },
     "CHANNEL_ID": {
       "description": "ID Channel Database",
-      "value": "-100"
+      "value": "-1001930234484"
     },
     "FORCE_SUB_CHANNEL": {
       "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
-      "value": "0"
+      "value": "-1001900248252"
     },
     "FORCE_SUB_GROUP": {
       "description": "ID Group FSUB, Kalo ga pake isi 0",
-      "value": "0"
+      "value": "-1001620073174"
     },
     "FORCE_SUB_GROUP2": {
       "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
@@ -71,15 +71,15 @@
     },
     "START_MESSAGE": {
       "description": "Pesan /start bisa pake format HTML",
-      "value": "<b>Hallo {first}</b>\n\n<b>Saya adalah bot file sharing saya bisa mengirim kamu file melalui link yg telah dibuat\n\nSebelum menggunakan saya kamu wajib join channel saya.</b>"
+      "value": "<b>Hallo {first}</b>\n\n<b>Saya adalah bot file sharing saya bisa mengirim kamu file melalui link yg telah dibuat\n\nSebelum menggunakan saya kamu wajib join channel saya\n\nMau bikin bot kaya gini? Pc @MSDZULQRNN</b>"
     },
     "FORCE_SUB_MESSAGE": {
       "description": "Pesan FSUB bisa pake format HTML",
-      "value": "<b>Hallo {first}\n\nKamu harus join channel saya sebelum memakai saya\n\nJoin channel dibawah😉</b>"
+      "value": "<b>Hallo {first}\n\nKamu harus join channel saya sebelum memakai saya\n\nJoin channel dibawah😉\n\nMau bikin bot kaya gini? Pc @MSDZULQRNN</b>"
     },
     "PROTECT_CONTENT": {
       "description": "Isi True biar bot gabisa di ss & di teruskan, kalo ga biarin aja False",
-      "value": "False"
+      "value": "True"
    }
   },
   "addons": [
