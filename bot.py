@@ -39,6 +39,9 @@ class Bot(Client):
             usr_bot_me = await self.get_me()
             self.username = usr_bot_me.username
             self.namebot = usr_bot_me.first_name
+            self.LOGGER(__name__).info(
+                f"TG_BOT_TOKEN detected!\n┌ First Name: {self.namebot}\n└ Username: @{self.username}\n——"
+            )
         except Exception as a:
             self.LOGGER(__name__).warning(a)
             self.LOGGER(__name__).info(
