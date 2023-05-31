@@ -79,6 +79,9 @@ class Bot(Client):
                     await self.export_chat_invite_link(FORCE_SUB_GROUP)
                     link = (await self.get_chat(FORCE_SUB_GROUP)).invite_link
                 self.invitelink2 = link
+                self.LOGGER(__name__).info(
+                    f"FORCE_SUB_GROUP detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                )
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
@@ -99,6 +102,9 @@ class Bot(Client):
                     await self.export_chat_invite_link(FORCE_SUB_GROUP2)
                     link = (await self.get_chat(FORCE_SUB_GROUP2)).invite_link
                 self.invitelink3 = link
+                self.LOGGER(__name__).info(
+                    f"FORCE_SUB_GROUP2 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                )
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
@@ -119,6 +125,9 @@ class Bot(Client):
                     await self.export_chat_invite_link(FORCE_SUB_GROUP3)
                     link = (await self.get_chat(FORCE_SUB_GROUP3)).invite_link
                 self.invitelink4 = link
+                self.LOGGER(__name__).info(
+                    f"FORCE_SUB_GROUP3 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                )
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
@@ -139,6 +148,9 @@ class Bot(Client):
                     await self.export_chat_invite_link(FORCE_SUB_GROUP4)
                     link = (await self.get_chat(FORCE_SUB_GROUP4)).invite_link
                 self.invitelink5 = link
+                self.LOGGER(__name__).info(
+                    f"FORCE_SUB_GROUP4 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                )
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
@@ -159,6 +171,9 @@ class Bot(Client):
                     await self.export_chat_invite_link(FORCE_SUB_GROUP5)
                     link = (await self.get_chat(FORCE_SUB_GROUP5)).invite_link
                 self.invitelink6 = link
+                self.LOGGER(__name__).info(
+                    f"FORCE_SUB_GROUP5 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                )
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
