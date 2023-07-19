@@ -8,16 +8,17 @@
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
 from bot import Bot
-from config import BUTTONS
+from config import BUTTONS, START_MSG
+from .button import start_button
 from MSDZULQURNAIN.ztext import zinfo, CMD_TEXT, BTN_TEXT, TUTOR_TEXT
 
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "home":
-        out = start_buttons(client)
+        out = start_button(client)
         await query.message.edit_text(
-            text=START_TXT.format(
+            text=START_MSG.format(
                 first=message.from_user.first_name,
                 last=message.from_user.last_name,
                 username=f"@{message.from_user.username}"
@@ -26,7 +27,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 mention=message.from_user.mention,
                 id=message.from_user.id,
             ),
-            reply_markup=out,
+            reply_markup=InlineKeyboardMarkup(out),
             disable_web_page_preview=True
             )
     elif data == "about":
@@ -34,7 +35,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             text=f"{zinfo}",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Tutup", callback_data="close")]]
+                [[InlineKeyboardButton("Kembali", callback_data="home")]]
             ),
         )
     elif data == "cmd":
@@ -42,7 +43,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             text=CMD_TEXT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Tutup", callback_data="close")]]
+                [[InlineKeyboardButton("Kembali", callback_data="home")]]
             ),
         )
     elif data == "btn":
@@ -55,7 +56,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             text=TUTOR_TEXT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Tutup", callback_data="close")]]
+                [[InlineKeyboardButton("Kembali", callback_data="home")]]
             ),
         )
     elif data == "close":
