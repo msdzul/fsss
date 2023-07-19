@@ -131,22 +131,7 @@ async def start_command(client: Bot, message: Message):
             except BaseException:
                 pass
     else:
-        out = InlineKeyboardMarkup([
-                           [
-                               InlineKeyboardButton(text="Tentang saya👤", callback_data="about"),
-                           ],
-                           [
-                               InlineKeyboardButton(text="Perintah", callback_data="cmd"),
-                               InlineKeyboardButton(text="Button", callback_data="btn"),
-                           ],
-                           [
-                               InlineKeyboardButton(text="Tutorial", callback_data="tutor"),
-                               InlineKeyboardButton(text="Jasa bot", url="https://t.me/DezetStore/4"),
-                           ],
-                           [
-                               InlineKeyboardButton(text="Tutup", callback_data="close"),
-                           ],
-                      ])
+        out = start_button(client)
         await message.reply_text(
             text=START_MSG.format(
                 first=message.from_user.first_name,
