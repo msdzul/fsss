@@ -30,6 +30,9 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 # NAMA OWNER
 OWNER = os.environ.get("OWNER", "MSDQQQ")
 
+#JUMLAH BUTTONS
+BUTTONS = int(os.environ.get("BUTTONS", ))
+
 # Protect Content
 PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
 
