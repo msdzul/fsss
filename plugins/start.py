@@ -22,7 +22,7 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from helper_func import decode, get_messages
+from helper_func import decode, get_messages, subsall, subs1, subs2, subs3, subs4, subs5, subs6, subs7, subs8, subs9, subs10
 
 from .button import fsub_button
 
@@ -48,7 +48,7 @@ async def _human_time_duration(seconds):
     return ", ".join(parts)
 
 
-@Bot.on_message(filters.command("start") & filters.private)
+@Bot.on_message(filters.command("start") & filters.private & subsall & subs1 & subs2 & subs3 & subs4 & subs5 & subs6 & subs7 & subs8 & subs9 & subs10)
 async def start_command(client: Bot, message: Message):
     id = message.from_user.id
     user_name = (
