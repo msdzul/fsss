@@ -18,3 +18,41 @@ zfrwd = "<b>Silahkan Forward Pesan dari Channel DataBase</b>\n\n\n<b>atau Kirim 
 zfrwdp = "<b>Silahkan Forward Pesan PERTAMA dari Channel DataBase</b>\n\n\n<b>atau Kirim Link Postingan PERTAMA dari Channel Database</b>"
 zfrwdt = "<b>Silahkan Forward Pesan TERAKHIR dari Channel DataBase</b>\n\n\n<b>atau Kirim Link Postingan TERAKHIR dari Channel Database</b>"
 zfrwds = "❌ <b>SALAH</b>\n\n<b>BANDEL BANGET IHH😭</b>"
+
+#TEXT OTHER
+CMD_TEXT = """
+Perintah untuk bot:
+
+OWNER:
+/gcast [pesan]
+fungsi untuk menyiarkan pesan ke seluruh pengguna bot
+
+ADMIN:
+/ping
+fungsi : untuk pengecekan ping bot
+/uptime
+fungsi : untuk pengecekan uptime bot
+/batch
+fungsi : untuk membuat link dari beberapa pesan/file/media
+/genlink
+fungsi : untuk mendapatkan link dari file yang ada di database
+/broadcast
+fungsi : untuk menyiarkan pesan ke seluruh pengguna bot
+
+Silahkan Klik button Tutorial di menu utama untuk mengetahui cara penggunaan perintah
+"""
+
+BTN_TEXT = "Bot Anda Menggunakan {} Button"
+
+TUTOR_TEXT = """
+TUTORIAL CARA PENGGUNAAN PERINTAH
+
+TUTORIAL /batch : [Tonton Disini](https://t.me/DezetStore)
+
+TUTORIAL /genlink : [Tonton Disini](https://t.me/DezetStore)
+
+TUTORIAL /broadcast : [Tonton Disini](https://t.me/DezetStore)
+
+Jika Belum Faham Silakan Konsultasikan
+Hub @MSDQQQ
+"""
