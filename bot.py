@@ -8,12 +8,16 @@ from config import (
     API_HASH,
     APP_ID,
     CHANNEL_ID,
-    FORCE_SUB_CHANNEL,
-    FORCE_SUB_GROUP,
-    FORCE_SUB_GROUP2,
-    FORCE_SUB_GROUP3,
-    FORCE_SUB_GROUP4,
-    FORCE_SUB_GROUP5,
+    FSUB1,
+    FSUB2,
+    FSUB3,
+    FSUB4,
+    FSUB5,
+    FSUB6,
+    FSUB7,
+    FSUB8,
+    FSUB9,
+    FSUB10,
     LOGGER,
     OWNER,
     TG_BOT_TOKEN,
@@ -49,144 +53,240 @@ class Bot(Client):
             )
             sys.exit()
 
-        if FORCE_SUB_CHANNEL:
+        if FSUB1:
             try:
-                info = await self.get_chat(FORCE_SUB_CHANNEL)
+                info = await self.get_chat(FSUB1)
                 link = info.invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL)
+                    await self.export_chat_invite_link(FSUB1)
                     link = info.invite_link
                 self.invitelink = link
                 self.LOGGER(__name__).info(
-                    f"FORCE_SUB_CHANNEL detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                    f"FSUB1 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
                 )
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI CHANNEL FORCE SUB!"
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI CHANNEL FSUB1"
                 )
                 self.LOGGER(__name__).warning(
-                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI CHANNEL FORCE SUB JIKA SUDAH SILAKAN CEK KEMBALI😗: {FORCE_SUB_CHANNEL}"
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI CHANNEL FSUB1 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FSUB1}"
                 )
                 self.LOGGER(__name__).info(
                     "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
                 )
                 sys.exit()
 
-        if FORCE_SUB_GROUP:
+        if FSUB2:
             try:
-                info = await self.get_chat(FORCE_SUB_GROUP)
+                info = await self.get_chat(FSUB2)
                 link = info.invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_GROUP)
+                    await self.export_chat_invite_link(FSUB2)
                     link = info.invite_link
                 self.invitelink2 = link
                 self.LOGGER(__name__).info(
-                    f"FORCE_SUB_GROUP detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                    f"FSUB2 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
                 )
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FORCE SUB GRUB!"
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FSUB2"
                 )
                 self.LOGGER(__name__).warning(
-                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FORCE SUB GRUB JIKA SUDAH SILAKAN CEK KEMBALI😗: {FORCE_SUB_GROUP}"
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FSUB2 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FSUB2}"
                 )
                 self.LOGGER(__name__).info(
                     "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
                 )
                 sys.exit()
 
-        if FORCE_SUB_GROUP2:
+        if FSUB3:
             try:
-                info = await self.get_chat(FORCE_SUB_GROUP2)
+                info = await self.get_chat(FSUB3)
                 link = info.invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_GROUP2)
+                    await self.export_chat_invite_link(FSUB3)
                     link = info.invite_link
                 self.invitelink3 = link
                 self.LOGGER(__name__).info(
-                    f"FORCE_SUB_GROUP2 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                    f"FSUB3 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
                 )
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FORCE SUB GRUB2"
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FSUB3"
                 )
                 self.LOGGER(__name__).warning(
-                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FORCE SUB GRUB2 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FORCE_SUB_GROUP2}"
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FSUB3 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FSUB3}"
                 )
                 self.LOGGER(__name__).info(
                     "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
                 )
                 sys.exit()
 
-        if FORCE_SUB_GROUP3:
+        if FSUB4:
             try:
-                info = await self.get_chat(FORCE_SUB_GROUP3)
+                info = await self.get_chat(FSUB4)
                 link = info.invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_GROUP3)
+                    await self.export_chat_invite_link(FSUB4)
                     link = info.invite_link
                 self.invitelink4 = link
                 self.LOGGER(__name__).info(
-                    f"FORCE_SUB_GROUP3 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                    f"FSUB4 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
                 )
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FORCE SUB GRUB3"
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FSUB4"
                 )
                 self.LOGGER(__name__).warning(
-                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FORCE SUB GRUB3 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FORCE_SUB_GROUP3}"
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FSUB4 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FSUB4}"
                 )
                 self.LOGGER(__name__).info(
                     "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
                 )
                 sys.exit()
 
-        if FORCE_SUB_GROUP4:
+        if FSUB5:
             try:
-                info = await self.get_chat(FORCE_SUB_GROUP4)
+                info = await self.get_chat(FSUB5)
                 link = info.invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_GROUP4)
+                    await self.export_chat_invite_link(FSUB5)
                     link = info.invite_link
                 self.invitelink5 = link
                 self.LOGGER(__name__).info(
-                    f"FORCE_SUB_GROUP4 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                    f"FSUB5 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
                 )
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FORCE SUB GRUB4"
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FSUB5"
                 )
                 self.LOGGER(__name__).warning(
-                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FORCE SUB GRUB4 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FORCE_SUB_GROUP4}"
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FSUB5 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FSUB5}"
                 )
                 self.LOGGER(__name__).info(
                     "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
                 )
                 sys.exit()
 
-        if FORCE_SUB_GROUP5:
+        if FSUB6:
             try:
-                info = await self.get_chat(FORCE_SUB_GROUP5)
+                info = await self.get_chat(FSUB6)
                 link = info.invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_GROUP5)
+                    await self.export_chat_invite_link(FSUB6)
                     link = info.invite_link
                 self.invitelink6 = link
                 self.LOGGER(__name__).info(
-                    f"FORCE_SUB_GROUP5 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                    f"FSUB6 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
                 )
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FORCE SUB GRUB5"
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FSUB6"
                 )
                 self.LOGGER(__name__).warning(
-                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FORCE SUB GRUB5 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FORCE_SUB_GROUP5}"
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FSUB6 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FSUB6}"
+                )
+                self.LOGGER(__name__).info(
+                    "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
+                )
+                sys.exit()
+
+        if FSUB7:
+            try:
+                info = await self.get_chat(FSUB7)
+                link = info.invite_link
+                if not link:
+                    await self.export_chat_invite_link(FSUB7)
+                    link = info.invite_link
+                self.invitelink7 = link
+                self.LOGGER(__name__).info(
+                    f"FSUB7 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                )
+            except Exception as a:
+                self.LOGGER(__name__).warning(a)
+                self.LOGGER(__name__).warning(
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FSUB7"
+                )
+                self.LOGGER(__name__).warning(
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FSUB7 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FSUB7}"
+                )
+                self.LOGGER(__name__).info(
+                    "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
+                )
+                sys.exit()
+
+        if FSUB8:
+            try:
+                info = await self.get_chat(FSUB8)
+                link = info.invite_link
+                if not link:
+                    await self.export_chat_invite_link(FSUB8)
+                    link = info.invite_link
+                self.invitelink8 = link
+                self.LOGGER(__name__).info(
+                    f"FSUB8 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                )
+            except Exception as a:
+                self.LOGGER(__name__).warning(a)
+                self.LOGGER(__name__).warning(
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FSUB8"
+                )
+                self.LOGGER(__name__).warning(
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FSUB8 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FSUB8}"
+                )
+                self.LOGGER(__name__).info(
+                    "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
+                )
+                sys.exit()
+
+        if FSUB9:
+            try:
+                info = await self.get_chat(FSUB9)
+                link = info.invite_link
+                if not link:
+                    await self.export_chat_invite_link(FSUB9)
+                    link = info.invite_link
+                self.invitelink9 = link
+                self.LOGGER(__name__).info(
+                    f"FSUB9 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                )
+            except Exception as a:
+                self.LOGGER(__name__).warning(a)
+                self.LOGGER(__name__).warning(
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FSUB9"
+                )
+                self.LOGGER(__name__).warning(
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FSUB9 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FSUB9}"
+                )
+                self.LOGGER(__name__).info(
+                    "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
+                )
+                sys.exit()
+
+        if FSUB10:
+            try:
+                info = await self.get_chat(FSUB10)
+                link = info.invite_link
+                if not link:
+                    await self.export_chat_invite_link(FSUB10)
+                    link = info.invite_link
+                self.invitelink10 = link
+                self.LOGGER(__name__).info(
+                    f"FSUB10 detected!\n┌ Title: {info.title}\n└ Chat ID: {info.id}\n——"
+                )
+            except Exception as a:
+                self.LOGGER(__name__).warning(a)
+                self.LOGGER(__name__).warning(
+                    "BOT TIDAK BISA MENERIMA INVITE LINK DARI FSUB10"
+                )
+                self.LOGGER(__name__).warning(
+                    f"JADIKAN @{self.username} SEBAGAI ADMIN DI FSUB10 JIKA SUDAH SILAKAN CEK KEMBALI😗: {FSUB10}"
                 )
                 self.LOGGER(__name__).info(
                     "BOT BERHENTI😞. Join https://t.me/MsSUPP0RT untuk info lebih lanjut"
