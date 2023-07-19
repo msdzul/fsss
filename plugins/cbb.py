@@ -14,7 +14,22 @@ from MSDZULQURNAIN.ztext import zinfo, CMD_TEXT, BTN_TEXT, TUTOR_TEXT
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
-    if data == "about":
+    if data == "home":
+        out = start_buttons(client)
+        await query.message.edit_text(
+            text=START_TXT.format(
+                first=message.from_user.first_name,
+                last=message.from_user.last_name,
+                username=f"@{message.from_user.username}"
+                if message.from_user.username
+                else None,
+                mention=message.from_user.mention,
+                id=message.from_user.id,
+            ),
+            reply_markup=out,
+            disable_web_page_preview=True
+            )
+    elif data == "about":
         await query.message.edit_text(
             text=f"{zinfo}",
             disable_web_page_preview=True,
