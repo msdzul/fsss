@@ -19,7 +19,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             text=f"{zinfo}",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Tutup💝", callback_data="close")]]
+                [[InlineKeyboardButton("Tutup", callback_data="close")]]
             ),
         )
     elif data == "close":
