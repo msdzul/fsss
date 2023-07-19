@@ -47,21 +47,8 @@ zfrwds = "❌ <b>SALAH</b>\n\n<b>BANDEL BANGET IHH😭</b>"
 CMD_TEXT = """
 Perintah untuk bot:
 
-OWNER:
-/gcast [pesan]
-fungsi untuk menyiarkan pesan ke seluruh pengguna bot
 
-ADMIN:
-/ping
-fungsi : untuk pengecekan ping bot
-/uptime
-fungsi : untuk pengecekan uptime bot
-/batch
-fungsi : untuk membuat link dari beberapa pesan/file/media
-/genlink
-fungsi : untuk mendapatkan link dari file yang ada di database
-/broadcast
-fungsi : untuk menyiarkan pesan ke seluruh pengguna bot
+ pesan ke seluruh pengguna bot
 
 Silahkan Klik button Tutorial di menu utama untuk mengetahui cara penggunaan perintah
 """
