@@ -165,7 +165,27 @@ async def sub10(filter, client, update):
 
     return member.status in ["creator", "administrator", "member"]
 
-
+async def is_subscribed(filter, client, update):
+    if not FSUB1:
+        return True
+    if not FSUB2:
+        return True
+    if not FSUB3:
+        return True
+    if not FSUB4:
+        return True
+    if not FSUB5:
+        return True
+    if not FSUB6:
+        return True
+    if not FSUB7:
+        return True
+    if not FSUB8:
+        return True
+    if not FSUB9:
+        return True
+    if not FSUB10:
+        return True
 
 
 
