@@ -24,7 +24,7 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from helper_func import decode, get_messages, subsall, subsch, subsgc, substai, subslg, substr, subsml
 
-from .button import fsub_button, start_button
+from .button import fsub_button
 
 START_TIME = datetime.utcnow()
 START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
@@ -131,7 +131,22 @@ async def start_command(client: Bot, message: Message):
             except BaseException:
                 pass
     else:
-        out = start_button(client)
+        out = InlineKeyboardMarkup([
+                           [
+                               InlineKeyboardButton(text="Tentang saya👤", callback_data="about"),
+                           ],
+                           [
+                               InlineKeyboardButton(text="Perintah", callback_data="cmd"),
+                               InlineKeyboardButton(text="Button", callback_data="btn"),
+                           ],
+                           [
+                               InlineKeyboardButton(text="Tutorial", callback_data="tutor"),
+                               InlineKeyboardButton(text="Jasa bot", url="https://t.me/DezetStore/4"),
+                           ],
+                           [
+                               InlineKeyboardButton(text="Tutup", callback_data="close"),
+                           ],
+                      ])
         await message.reply_text(
             text=START_MSG.format(
                 first=message.from_user.first_name,
@@ -142,7 +157,7 @@ async def start_command(client: Bot, message: Message):
                 mention=message.from_user.mention,
                 id=message.from_user.id,
             ),
-            reply_markup=InlineKeyboardMarkup(out),
+            reply_markup=out,
             quote=True,
             disable_web_page_preview=True,
         )
