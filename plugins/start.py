@@ -226,11 +226,11 @@ async def send_text(client: Bot, message: Message):
                     unsuccessful += 1
                 total += 1
         status = f"""<b><u>Berhasil Broadcast</u>
-Total Pengguna📋: <code>{total}</code>
-Berhasil mengirim surat cinta💝: <code>{successful}</code>
-Gagal ky percintaan mu🗿: <code>{unsuccessful}</code>
-Pengguna diblokir🚫: <code>{blocked}</code>
-Akun dihapus karena nakal😾: <code>{deleted}</code></b>\n\n🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍"""
+Total Pengguna: <code>{total}</code>
+Berhasil Broadcast: <code>{successful}</code>
+Gagal Broadcast: <code>{unsuccessful}</code>
+Pengguna Memblokir: <code>{blocked}</code>
+Akun Terhapus: <code>{deleted}</code></b>\n\n🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍"""
         return await pls_wait.edit(status)
     else:
         msg = await message.reply(
