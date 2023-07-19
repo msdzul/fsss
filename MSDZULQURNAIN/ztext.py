@@ -45,10 +45,33 @@ zfrwds = "❌ <b>SALAH</b>\n\n<b>BANDEL BANGET IHH😭</b>"
 
 #TEXT OTHER
 CMD_TEXT = """
-Perintah untuk bot:
+**PERINTAH UNTUK BOT:
 
+OWNER:
+ᴄᴍᴅ:**
+   **├⋟** /gcast [reply]
+   **└⋟** Mengirimkan Pesan Broadcast Ke Seluruh Pengguna
 
- pesan ke seluruh pengguna bot
+**ADMIN
+ᴄᴍᴅ:**
+   **├⋟** /ping
+   **└⋟** Untuk Pengecekan Ping Bot
+
+**ᴄᴍᴅ:
+   ├⋟** /uptime
+   **└⋟** Untuk Pengecekan Uptime Bot
+
+**ᴄᴍᴅ:
+   ├⋟** /batch
+   **└⋟** Untuk Membuat Link Dari Beberapa File Yang Dikirimkan
+
+**ᴄᴍᴅ:
+   ├⋟** /genlink
+   **└⋟** Untuk Membuat Link Dari File Yang Ada Di Database
+
+**ᴄᴍᴅ:
+   ├⋟** /broadcast
+   **└⋟** Mengirimkan Pesan Broadcast Ke Seluruh Pengguna
 
 Silahkan Klik button Tutorial di menu utama untuk mengetahui cara penggunaan perintah
 """
