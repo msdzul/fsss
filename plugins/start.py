@@ -24,7 +24,7 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from helper_func import decode, get_messages, subsall, subs1, subs2, subs3, subs4, subs5, subs6, subs7, subs8, subs9, subs10
 
-from .button import fsub_button
+from .button import fsub_button, start_button
 
 START_TIME = datetime.utcnow()
 START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
@@ -157,7 +157,7 @@ async def start_command(client: Bot, message: Message):
                 mention=message.from_user.mention,
                 id=message.from_user.id,
             ),
-            reply_markup=out,
+            reply_markup=InlineKeyboardMarkup(out),
             quote=True,
             disable_web_page_preview=True,
         )
