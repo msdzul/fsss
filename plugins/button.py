@@ -7,6 +7,27 @@ from config import FSUB1, FSUB2, FSUB3, FSUB4, FSUB5, FSUB6, FSUB7, FSUB8, FSUB9
 
 from pyrogram.types import InlineKeyboardButton
 
+BTN = [
+    [
+       InlineKeyboardButton(text="Tentang saya👤", callback_data="about"),
+    ],
+    [
+       InlineKeyboardButton(text="Perintah", callback_data="cmd"),
+       InlineKeyboardButton(text="Button", callback_data="btn"),
+    ],
+    [
+       InlineKeyboardButton(text="Tutorial", callback_data="tutor"),
+       InlineKeyboardButton(text="Jasa bot", url="https://t.me/DezetStore/4"),
+    ],
+    [
+       InlineKeyboardButton(text="Tutup", callback_data="close"),
+    ],
+  ]
+  
+  
+def start_button(client):
+    buttons = BTN
+    return buttons
 
 
 def fsub_button(client, message):
