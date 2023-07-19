@@ -28,7 +28,7 @@ API_HASH = os.environ.get("API_HASH", "")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "MSDZULQURNAIN")
+OWNER = os.environ.get("OWNER", "MSDQQQ")
 
 # Protect Content
 PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
@@ -44,12 +44,16 @@ UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "main")
 DB_URI = os.environ.get("DATABASE_URL", "")
 
 # ID Channel FSUB-BUTT kalo ga pake isi 0
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0"))
-FORCE_SUB_GROUP2 = int(os.environ.get("FORCE_SUB_GROUP2", "0"))
-FORCE_SUB_GROUP3 = int(os.environ.get("FORCE_SUB_GROUP3", "0"))
-FORCE_SUB_GROUP4 = int(os.environ.get("FORCE_SUB_GROUP4", "0"))
-FORCE_SUB_GROUP5 = int(os.environ.get("FORCE_SUB_GROUP5", "0"))
+FSUB1 = int(os.environ.get("FSUB1", "0"))
+FSUB2 = int(os.environ.get("FSUB2", "0"))
+FSUB3 = int(os.environ.get("FSUB3", "0"))
+FSUB4 = int(os.environ.get("FSUB4", "0"))
+FSUB5 = int(os.environ.get("FSUB5", "0"))
+FSUB6 = int(os.environ.get("FSUB6", "0"))
+FSUB7 = int(os.environ.get("FSUB7", "0"))
+FSUB8 = int(os.environ.get("FSUB8", "0"))
+FSUB9 = int(os.environ.get("FSUB9", "0"))
+FSUB10 = int(os.environ.get("FSUB10", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
