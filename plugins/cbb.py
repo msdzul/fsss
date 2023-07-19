@@ -9,7 +9,7 @@ from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMa
 
 from bot import Bot
 from config import BUTTONS
-from MSDZULQURNAIN.ztext import zinfo, CMD_TEXT
+from MSDZULQURNAIN.ztext import zinfo, CMD_TEXT, BTN_TEXT, TUTOR_TEXT
 
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
@@ -32,7 +32,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         )
     elif data == "btn":
         await query.answer(
-            text=BTN_TXT,
+            text=BTN_TEXT,
             show_alert=True
             )
     elif data == "tutor":
