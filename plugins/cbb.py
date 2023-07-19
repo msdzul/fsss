@@ -8,8 +8,8 @@
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
 from bot import Bot
-from config import OWNER
-from MSDZULQURNAIN.ztext import zinfo
+from config import BUTTONS
+from MSDZULQURNAIN.ztext import zinfo, CMD_TEXT
 
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
@@ -17,6 +17,27 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     if data == "about":
         await query.message.edit_text(
             text=f"{zinfo}",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton("Tutup", callback_data="close")]]
+            ),
+        )
+    elif data == "cmd":
+        await query.message.edit_text(
+            text=CMD_TEXT,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton("Tutup", callback_data="close")]]
+            ),
+        )
+    elif data == "btn":
+        await query.answer(
+            text=BTN_TXT,
+            show_alert=True
+            )
+    elif data == "tutor":
+        await query.message.edit_text(
+            text=TUTOR_TEXT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Tutup", callback_data="close")]]
