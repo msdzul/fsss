@@ -253,9 +253,6 @@ async def is_subscribed(filter, client, update):
     return member.status in ["creator", "administrator", "member"]
 
 
-
-
-
 async def encode(string):
     string_bytes = string.encode("ascii")
     base64_bytes = base64.urlsafe_b64encode(string_bytes)
@@ -311,3 +308,16 @@ async def get_message_id(client, message):
                 return msg_id
         elif channel_id == client.db_channel.username:
             return msg_id
+
+
+subs1 = filters.create(sub1)
+subs2 = filters.create(sub2)
+subs3 = filters.create(sub3)
+subs4 = filters.create(sub4)
+subs5 = filters.create(sub5)
+subs6 = filters.create(sub6)
+subs7 = filters.create(sub7)
+subs8 = filters.create(sub8)
+subs9 = filters.create(sub9)
+subs10 = filters.create(sub10)
+subsall = filters.create(is_subscribed)
