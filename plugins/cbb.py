@@ -32,7 +32,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         )
     elif data == "btn":
         await query.answer(
-            text=BTN_TEXT,
+            text=BTN_TEXT.format(BUTTONS),
             show_alert=True
             )
     elif data == "tutor":
