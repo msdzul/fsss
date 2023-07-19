@@ -186,6 +186,71 @@ async def is_subscribed(filter, client, update):
         return True
     if not FSUB10:
         return True
+    user_id = update.from_user.id
+    if user_id in ADMINS:
+        return True
+    try:
+        member = await client.get_chat_member(
+            chat_id=FSUB1, user_id=user_id
+        )
+    except UserNotParticipant:
+        return False
+    try:
+        member = await client.get_chat_member(
+            chat_id=FSUB2, user_id=user_id
+        )
+    except UserNotParticipant:
+        return False
+    try:
+        member = await client.get_chat_member(
+            chat_id=FSUB3, user_id=user_id
+        )
+    except UserNotParticipant:
+        return False
+    try:
+        member = await client.get_chat_member(
+            chat_id=FSUB4, user_id=user_id
+        )
+    except UserNotParticipant:
+        return False
+    try:
+        member = await client.get_chat_member(
+            chat_id=FSUB5, user_id=user_id
+        )
+    except UserNotParticipant:
+        return False
+    try:
+        member = await client.get_chat_member(
+            chat_id=FSUB6, user_id=user_id
+        )
+    except UserNotParticipant:
+        return False
+    try:
+        member = await client.get_chat_member(
+            chat_id=FSUB7, user_id=user_id
+        )
+    except UserNotParticipant:
+        return False
+    try:
+        member = await client.get_chat_member(
+            chat_id=FSUB8, user_id=user_id
+        )
+    except UserNotParticipant:
+        return False
+    try:
+        member = await client.get_chat_member(
+            chat_id=FSUB9, user_id=user_id
+        )
+    except UserNotParticipant:
+        return False
+    try:
+        member = await client.get_chat_member(
+            chat_id=FSUB10, user_id=user_id
+        )
+    except UserNotParticipant:
+        return False
+
+    return member.status in ["creator", "administrator", "member"]
 
 
 
