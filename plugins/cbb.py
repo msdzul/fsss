@@ -19,13 +19,13 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         out = start_button(client)
         await query.message.edit_text(
             text=START_MSG.format(
-                first=message.from_user.first_name,
-                last=message.from_user.last_name,
-                username=f"@{message.from_user.username}"
-                if message.from_user.username
+                first=query.from_user.first_name,
+                last=query.from_user.last_name,
+                username=f"@{query.from_user.username}"
+                if query.from_user.username
                 else None,
-                mention=message.from_user.mention,
-                id=message.from_user.id,
+                mention=query.from_user.mention,
+                id=query.from_user.id,
             ),
             reply_markup=InlineKeyboardMarkup(out),
             disable_web_page_preview=True
