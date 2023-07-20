@@ -47,12 +47,7 @@ zfrwds = "❌ <b>SALAH</b>\n\n<b>BANDEL BANGET IHH😭</b>"
 CMD_TEXT = """
 **PERINTAH UNTUK BOT:
 
-OWNER:
-ᴄᴍᴅ:**
-   **├⋟** /gcast [reply]
-   **└⋟** Mengirimkan Pesan Broadcast Ke Seluruh Pengguna
-
-**ADMIN
+ADMIN:
 ᴄᴍᴅ:**
    **├⋟** /ping
    **└⋟** Untuk Pengecekan Ping Bot
@@ -60,6 +55,10 @@ OWNER:
 **ᴄᴍᴅ:
    ├⋟** /uptime
    **└⋟** Untuk Pengecekan Uptime Bot
+
+**ᴄᴍᴅ:
+   ├⋟** /users
+   **└⋟** Untuk Pengecekan Jumlah Pengguna Bot
 
 **ᴄᴍᴅ:
    ├⋟** /batch
@@ -81,12 +80,12 @@ BTN_TEXT = "Bot Anda Menggunakan {} Button"
 TUTOR_TEXT = """
 TUTORIAL CARA PENGGUNAAN PERINTAH
 
-TUTORIAL /batch : [Tonton Disini](https://t.me/DezetStore)
+TUTORIAL /batch : [Tonton Disini](https://t.me/DezetStore/16)
 
-TUTORIAL /genlink : [Tonton Disini](https://t.me/DezetStore)
+TUTORIAL /genlink : [Tonton Disini](https://t.me/DezetStore/17)
 
-TUTORIAL /broadcast : [Tonton Disini](https://t.me/DezetStore)
+TUTORIAL /broadcast : [Tonton Disini](https://t.me/DezetStore/18)
 
 Jika Belum Faham Silakan Konsultasikan
-Hub @MSDQQQ
+Hubungi owner @MSDQQQ
 """
