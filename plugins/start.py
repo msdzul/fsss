@@ -16,6 +16,7 @@ from config import (
     FORCE_MSG,
     PROTECT_CONTENT,
     START_MSG,
+    OWNER_ID,
 )
 from database.sql import add_user, full_userbase, query_msg
 from pyrogram import filters
@@ -179,7 +180,7 @@ async def get_users(client: Bot, message: Message):
     await msg.edit(f"{len(users)} <b>Jumlah Pengguna</b>")
 
 
-@Bot.on_message(filters.command("broadcast") & filters.user(ADMINS))
+@Bot.on_message(filters.command("broadcast") & filters.user(ADMINS) & filters.user(OWNER_ID))
 async def send_text(client: Bot, message: Message):
     if message.reply_to_message:
         query = await query_msg()
