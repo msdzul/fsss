@@ -4,13 +4,13 @@
 
 #INFO
 zinfo = """
-<b>❖BOT FILE SHARING TELEGRAM❖</b>
+**❖BOT FILE SHARING TELEGRAM❖
 
-<b>✰ Owner Repo : <a href='https://t.me/MSDQQQ'>🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍</a>
-⇝ Channel : <a href='https://t.me/DezetStore'>DEZET STORE</a>
-⇝ Support : <a href='https://t.me/DezetSupport'>DEZET SUPPORT</a>
+✰ Owner Repo :** [🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍](https://t.me/MSDQQQ)
+**⇝ Channel :** [DEZET STORE](https://t.me/DezetStore)
+⇝ Support : [DEZET SUPPORT](https://t.me/DezetSupport)
 
-WAKTU ADALAH UANG BIJAKLAH MENGAMBIL LANGKAH😉</b>
+WAKTU ADALAH UANG BIJAKLAH MENGAMBIL LANGKAH😉**
 """
 
 #START CONFIG
@@ -78,14 +78,14 @@ Silahkan Klik button Tutorial di menu utama untuk mengetahui cara penggunaan per
 BTN_TEXT = "Bot Anda Menggunakan {} Button"
 
 TUTOR_TEXT = """
-TUTORIAL CARA PENGGUNAAN PERINTAH
+**TUTORIAL CARA PENGGUNAAN PERINTAH
 
-TUTORIAL /batch : [Tonton Disini](https://t.me/DezetStore/16)
+TUTORIAL** /batch : **[TONTON DISINI](https://t.me/DezetStore/16)
 
-TUTORIAL /genlink : [Tonton Disini](https://t.me/DezetStore/17)
+TUTORIAL** /genlink : **[TONTON DISINI](https://t.me/DezetStore/17)
 
-TUTORIAL /broadcast : [Tonton Disini](https://t.me/DezetStore/18)
+TUTORIAL** /broadcast : **[TONTON DISINI](https://t.me/DezetStore/18)
 
 Jika Belum Faham Silakan Konsultasikan
-Hubungi owner @MSDQQQ
+Hubungi owner** @MSDQQQ
 """
