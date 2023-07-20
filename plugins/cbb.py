@@ -6,7 +6,7 @@
 
 
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
-
+from pyrogram.types import *
 from bot import Bot
 from config import BUTTONS, START_MSG
 from .button import start_button
@@ -34,6 +34,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         await query.message.edit_text(
             text=f"{zinfo}",
             disable_web_page_preview=True,
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Kembali", callback_data="home")]]
             ),
@@ -42,6 +43,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         await query.message.edit_text(
             text=CMD_TEXT,
             disable_web_page_preview=True,
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Kembali", callback_data="home")]]
             ),
@@ -55,6 +57,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         await query.message.edit_text(
             text=TUTOR_TEXT,
             disable_web_page_preview=True,
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Kembali", callback_data="home")]]
             ),
