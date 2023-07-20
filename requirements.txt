@@ -4,6 +4,7 @@ heroku3
 psycopg2-binary
 pyrogram==1.4.16
 python-dotenv
+python-telegram-bot
 Pyromod==1.0.0
 speedtest-cli
 sqlalchemy==1.3.23
