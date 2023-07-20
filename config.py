@@ -27,9 +27,6 @@ API_HASH = os.environ.get("API_HASH", "")
 # ID Channel Database
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 
-# OWNER PEMILIK BOT
-OWNER_ID = int(os.environ.get("OWNER_ID", ""))
-
 # NAMA OWNER
 OWNER = os.environ.get("OWNER", "MSDQQQ")
 
