@@ -7,7 +7,7 @@ zinfo = """
 **❖BOT FILE SHARING TELEGRAM❖
 
 ✰ Owner Repo :** [🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍](https://t.me/MSDQQQ)
-**⇝ Channel :** [DEZET STORE](https://t.me/DezetStore)
+**⇝ Channel : [DEZET STORE](https://t.me/DezetStore)
 ⇝ Support : [DEZET SUPPORT](https://t.me/DezetSupport)
 
 WAKTU ADALAH UANG BIJAKLAH MENGAMBIL LANGKAH😉**
