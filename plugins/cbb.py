@@ -6,7 +6,7 @@
 
 
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
-from pyrogram.types import *
+from telegram import ParseMode
 from bot import Bot
 from config import BUTTONS, START_MSG
 from .button import start_button
