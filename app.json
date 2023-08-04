@@ -45,6 +45,10 @@
       "description": "ID Channel Database",
       "value": "0"
     },
+    "BUTTONS": {
+      "description": "JUMLAH button",
+      "value": "0"
+    },
     "FSUB1": {
       "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
       "value": "0"
