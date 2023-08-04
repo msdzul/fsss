@@ -11,7 +11,7 @@
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Bot token dari t.me/BotFather",
-      "value": "6003389653:AAEiEtEdirMnbhAbdXXAjAjyQaZnl6bNrxw"
+      "value": ""
     },
     "OWNER": {
       "description": "Username Owner Bot, gosah pake @",
@@ -19,23 +19,23 @@
     },
     "OWNER_ID": {
       "description": "ID Owner BOT",
-      "value": "1337085565"
+      "value": "1814359323"
     },
     "ADMINS": {
       "description": "ID Admin yg bisa akses bot",
-      "value": "1337085565"
+      "value": "1814359323"
     },
     "APP_ID": {
       "description": "APP ID dari my.telegram.org",
-      "value": "16452568"
+      "value": ""
     },
     "API_HASH": {
       "description": "API HASH dari my.telegram.org",
-      "value": "f936697c5c9e5bffd433babef7a4e4c9"
+      "value": ""
     },
     "HEROKU_API_KEY": {
      "description": "Apikey Heroku di account setting",
-     "value": "9d037c24-1089-4778-ad5a-4ce41269b6bc"
+     "value": ""
     },
     "HEROKU_APP_NAME": {
      "description": "Heroku App Name, paling atas",
@@ -43,29 +43,45 @@
     },
     "CHANNEL_ID": {
       "description": "ID Channel Database",
-      "value": "-1001930234484"
+      "value": "0"
     },
-    "FORCE_SUB_CHANNEL": {
+    "FSUB1": {
       "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
-      "value": "-1001900248252"
+      "value": "0"
     },
-    "FORCE_SUB_GROUP": {
+    "FSUB2": {
       "description": "ID Group FSUB, Kalo ga pake isi 0",
-      "value": "-1001620073174"
+      "value": "0"
     },
-    "FORCE_SUB_GROUP2": {
+    "FSUB3": {
       "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
       "value": "0"
     },
-    "FORCE_SUB_GROUP3": {
+    "FSUB4": {
       "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
       "value": "0"
     },
-    "FORCE_SUB_GROUP4": {
+    "FSUB5": {
       "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
       "value": "0"
     },
-    "FORCE_SUB_GROUP5": {
+    "FSUB6": {
+      "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
+      "value": "0"
+    },
+    "FSUB7": {
+      "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
+      "value": "0"
+    },
+    "FSUB8": {
+      "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
+      "value": "0"
+    },
+    "FSUB9": {
+      "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
+      "value": "0"
+    },
+    "FSUB10": {
       "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
       "value": "0"
     },
