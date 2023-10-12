@@ -45,7 +45,7 @@ UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "main")
 
 # Database MONGODB
 MONGO_URI = os.environ.get("MONGO_URI", "")
-MONGO_URI = os.environ.get("MONGO_URI", "")
+DB_NAME = os.environ.get("DB_NAME", "")
 
 # ID Channel FSUB-BUTT kalo ga pake isi 0
 FSUB1 = int(os.environ.get("FSUB1", "0"))
