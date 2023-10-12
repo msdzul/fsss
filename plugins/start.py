@@ -205,9 +205,10 @@ async def send_text(client: Bot, message: Message):
                     await broadcast_msg.copy(chat_id, protect_content=PROTECT_CONTENT)
                     successful += 1
                 except UserIsBlocked:
-                    awai
+                    await hapus(chat_id) 
                     blocked += 1
                 except InputUserDeactivated:
+                    await hapus(chat_id)
                     deleted += 1
                 except BaseException:
                     unsuccessful += 1
