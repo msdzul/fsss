@@ -57,10 +57,11 @@ async def start_command(client: Bot, message: Message):
         else None
     )
 
-    try:
-        await add_user(id, user_name)
-    except:
-        pass
+    if not await cek(id):
+       try:
+          await tambah(id)
+       except:
+            pass
     text = message.text
     if len(text) > 7:
         try:
@@ -175,14 +176,14 @@ async def get_users(client: Bot, message: Message):
     msg = await client.send_message(
         chat_id=message.chat.id, text="<code>Utiwi masehh...</code>"
     )
-    users = await full_userbase()
+    users = await semua()
     await msg.edit(f"{len(users)} <b>Jumlah Pengguna</b>")
 
 
 @Bot.on_message(filters.command("broadcast") & filters.user(ADMINS))
 async def send_text(client: Bot, message: Message):
     if message.reply_to_message:
-        query = await query_msg()
+        query = await semua()
         broadcast_msg = message.reply_to_message
         total = 0
         successful = 0
@@ -204,6 +205,7 @@ async def send_text(client: Bot, message: Message):
                     await broadcast_msg.copy(chat_id, protect_content=PROTECT_CONTENT)
                     successful += 1
                 except UserIsBlocked:
+                    awai
                     blocked += 1
                 except InputUserDeactivated:
                     deleted += 1
