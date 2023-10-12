@@ -43,8 +43,9 @@ HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 # Custom Repo untuk update.
 UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "main")
 
-# Database SQL
-DB_URI = os.environ.get("DATABASE_URL", "")
+# Database MONGODB
+MONGO_URI = os.environ.get("MONGO_URI", "")
+MONGO_URI = os.environ.get("MONGO_URI", "")
 
 # ID Channel FSUB-BUTT kalo ga pake isi 0
 FSUB1 = int(os.environ.get("FSUB1", "0"))
