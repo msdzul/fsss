@@ -194,8 +194,7 @@ async def send_text(client: Bot, message: Message):
         pls_wait = await message.reply(
             "<code>Sedang broadcast...Sabar ya</code>"
         )
-        for row in query:
-            chat_id = int(row[0])
+        for chat_id in query:
             if chat_id not in ADMINS:
                 try:
                     await broadcast_msg.copy(chat_id, protect_content=PROTECT_CONTENT)
