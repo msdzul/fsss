@@ -1,12 +1,12 @@
 {
-  "name": "F-SUBS 6 BUTTON",
+  "name": "F-SUBS 10 BUTTON",
   "description": "BOT BY MS DZULQURNAIN",
   "keywords": [
     "telegram",
     "file",
     "sharing"
   ],
-  "repository": "https://github.com/MS-DZULQURNAIN/FSUB-6BUTT",
+  "repository": "https://github.com/msdzul/fs",
   "logo": "https://telegra.ph/file/e86b561ca93dbc98ea2f1.jpg",
   "env": {
     "TG_BOT_TOKEN": {
@@ -15,7 +15,7 @@
     },
     "OWNER": {
       "description": "Username Owner Bot, gosah pake @",
-      "value": "MSDZULQRNN"
+      "value": "msdqqq"
     },
     "OWNER_ID": {
       "description": "ID Owner BOT",
@@ -42,12 +42,12 @@
      "value": ""
     },
     "CHANNEL_ID": {
-      "description": "ID Channel Database",
-      "value": "0"
+      "description": "ID Channel Database -100",
+      "value": ""
     },
     "BUTTONS": {
-      "description": "JUMLAH button",
-      "value": "0"
+      "description": "JUMLAH button isi sesuai var",
+      "value": ""
     },
     "FSUB1": {
       "description": "ID Channel/Grub FSUB, Kalo ga pake isi 0",
