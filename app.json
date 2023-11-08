@@ -41,6 +41,14 @@
      "description": "Heroku App Name, paling atas",
      "value": ""
     },
+    "MONGO_URI": {
+     "description": "Database MongoDB",
+     "value": ""
+    },
+    "DB_NAME": {
+     "description": "Nama Database",
+     "value": ""
+    },
     "CHANNEL_ID": {
       "description": "ID Channel Database -100",
       "value": ""
